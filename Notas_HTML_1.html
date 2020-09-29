@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- lang, para el lenguaje, en este caso español-->
+
+	<head> <!-- Metadatos, informacion no visible dentro del cuerpo de la pagina-->
+		<title>Darkness</title>
+	</head>
+
+	<body> <!-- Cuerpo, informacion visible dentro de la pagina-->
+		<h1>Titulo de mi web</h1> <!-- Encabezado con mas prioridad, solo debe ir uno en la pagina -->
+		<h2>Bienvenidos a mi web</h2>
+		<p> <!--Parrafo-->
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. <br> <!--Salto de linea-->Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+
+		<hr/> <!--Linea horizontal-->
+			<h2>Imagenes en HTML</h2>
+
+			<!--alt -> Texto alternativo, en caso de que no aparezca la imagen.  src -> se coloca una ruta relativa para indicar carpeta-->
+			<img alt="Imagen de un Oso Panda" title="Foto de un Oso Panda" src="imagenes\OsoPanda.jpg" width="455px">
+		<hr/>
+
+		<h3>Tercer encabezado de la pagina</h3>
+		<p>
+			Lorem ipsum dolor sit amet, <strong>consectetur adipisicing elit,</strong> <!--Texto en negritas-->sed do eiusmod
+			tempor <em>incididunt ut labore et dolore magna aliqua.</em> <!--Texto en cursivas-->s Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. 
+
+			<BLOCKQUOTE> <!--Texto en forma de cita-->
+				Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</BLOCKQUOTE>
+		</p>
+
+		<h3>Formulario</h3>
+		<form>
+
+			<p> <!-- Para separar los input-->
+				<label for="nombre">Nombre</label> <!--Nombre del campo. for para indidar a que campo corresponde al input-->
+				<input type="text" name="nombre" placeholder="Escribe tu nombre" /> <!--Caja para insertar texto. name, para poner un nombre al campo. placeholder para colocar un texto y que desaparezca al introducir texto-->
+			</p>
+
+			<p> <!--textarea, para poner una caja de texto amplia -->
+				<label for="descripcion">Descripcion</label>
+				<textarea name="descripcion"></textarea>
+			</p>
+
+			<input type="radio" name="genero" value="hombre"> Hombre <br/> <!--tipo radiobuttons, campo para seleccionar x opciones -->
+			<input type="radio" name="genero" value="mujer"> Mujer <br/> 
+			<input type="radio" name="genero" value="sin definir"> Sin definir <br/> 
+
+			<select name="genero2"> <!-- select para desplazar varias opciones-->
+				<option value="hombre">Hombre</option>
+				<option value="mujer">Mujer</option>
+				<option value="sin definir">Sin definir</option>
+			</select>
+
+			<input type="submit" name="Enviar formulario"/> <!-- submit para poner un boton para enviar formulario-->
+
+		</form>
+
+		<h3>Lista de frutas</h3>
+		<ol> <!--Lista ordenada-->
+			<li>Manzana</li><!--Elementos de la lista-->
+				<ul> <!-- Sublista-->
+					<li>Roja</li>
+					<li>Verde</li>
+				</ul>
+			<li>Naranja</li>
+			<li>Pera</li>
+			<li>Sandia</li>
+		</ol>
+
+		<ul> <!--Lista desordenada-->
+			<li>Manzana</li><!--Elementos de la lista-->
+			<li>Naranja</li>
+			<li>Pera</li>
+			<li>Sandia</li>
+		</ul>
+
+		<h3>Tablas</h3>
+			<table border="1">
+				<tr> <!--Filas-->
+					<th>Nombre</th><!--Columna, th para poner en negritas el encabezado de la tabla-->
+					<th>Apellidos</th>
+					<th>Pais</th>
+				</tr>
+				<tr> <!--Filas-->
+					<td>Miguel</td><!--Columna-->
+					<td>Leon</td>
+					<td>Mexico</td>
+				</tr>
+				<tr> <!--Filas-->
+					<td>Maria</td><!--Columna-->
+					<td colspan="2">Lopez</td> <!--colspan, Expandir la columna (en este caso de que se desconozca el pais)-->
+				</tr>
+			</table>
+
+	</body>
+
+</html>
